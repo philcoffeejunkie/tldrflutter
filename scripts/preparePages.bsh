@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+
+# TODO check and delete old data?!
+# TODO print current actions...
+
+set -eu
+
+wget https://github.com/tldr-pages/tldr/archive/master.zip
+
+unzip master.zip tldr-master/pages/*
+# now all pages are unzipped to tldr-master/pages/
+
+cp -r ./tldr-master/pages/* ../assets/
+
+
+# build index of commands
+ls ../assets/linux/ > ../assets/linux-index.txt
+ls ../assets/common/ > ../assets/common-index.txt
