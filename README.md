@@ -1,16 +1,14 @@
-# tldrflutter
+<p align="center"><img src="assets/launcher/play-store-icon.png" alt="tldrflutter" width="100" height="100"></p>
+
+<h1 align="center">tldrflutter</h1>
 
 A Flutter client for tldr manpages
 
-## Getting Started
+<a href="https://play.google.com/store/apps/details?id=de.philcoffeejunkie.tldrflutter" target="_blank"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80"/></a>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![](screenshots/Screenshot_1606576927.png?raw=true)
+![](screenshots/Screenshot_1606576967.png?raw=true)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
