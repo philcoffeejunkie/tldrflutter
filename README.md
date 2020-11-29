@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/launcher/play-store-icon.png" alt="tldrflutter" width="100" height="100"></p>
+<p align="center"><img src="android/app/src/main/ic_launcher-playstore.png" alt="tldrflutter" width="100" height="100"></p>
 
 <h1 align="center">tldrflutter</h1>
 
