@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 class CommandPage extends StatelessWidget {
-  String command;
+  final String command;
 
   CommandPage(this.command);
 

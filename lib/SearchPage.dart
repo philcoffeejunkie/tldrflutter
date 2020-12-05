@@ -82,6 +82,9 @@ class SearchField extends StatelessWidget {
     String indexData = "";
 
     List<String> availableCommands = List();
+
+
+    // TODO ugly code, make more elegant ;)
     indexData = await getFileData("assets/common-index.txt");
     if (indexData.contains("\n" + command + ".md")) {
       availableCommands.add("common");
@@ -90,6 +93,21 @@ class SearchField extends StatelessWidget {
     indexData = await getFileData("assets/linux-index.txt");
     if (indexData.contains("\n" + command + ".md")) {
       availableCommands.add("linux");
+    }
+
+    indexData = await getFileData("assets/osx-index.txt");
+    if (indexData.contains("\n" + command + ".md")) {
+      availableCommands.add("osx");
+    }
+
+    indexData = await getFileData("assets/windows-index.txt");
+    if (indexData.contains("\n" + command + ".md")) {
+      availableCommands.add("windows");
+    }
+
+    indexData = await getFileData("assets/sunos-index.txt");
+    if (indexData.contains("\n" + command + ".md")) {
+      availableCommands.add("sunos");
     }
 
     return availableCommands;

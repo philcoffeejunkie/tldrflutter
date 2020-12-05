@@ -44,7 +44,7 @@ class AboutPage extends StatelessWidget {
             RaisedButton(
               child: Text('GitHub: github.com/philcoffeejunkie/tldrflutter'),
               onPressed: () {
-                launch('https://github.com/');
+                launch('https://github.com/philcoffeejunkie/tldrflutter');
               },
             ),
             RaisedButton(

@@ -1,19 +1,28 @@
 #!/usr/bin/env bash
 
 
-# TODO check and delete old data?!
-# TODO print current actions...
-
 set -eu
 
+echo "deleting old download data..."
+rm ./master.zip
+rm -fr ./tldr-master
+
+echo "downloading current data from github..."
 wget https://github.com/tldr-pages/tldr/archive/master.zip
 
+echo "unzipping data..."
 unzip master.zip tldr-master/pages/*
 # now all pages are unzipped to tldr-master/pages/
 
+echo "copying data to assets..."
 cp -r ./tldr-master/pages/* ../assets/
 
-
+echo "building index..."
 # build index of commands
 ls ../assets/linux/ > ../assets/linux-index.txt
 ls ../assets/common/ > ../assets/common-index.txt
+ls ../assets/osx > ../assets/osx-index.txt
+ls ../assets/sunos > ../assets/sunos-index.txt
+ls ../assets/windows > ../assets/windows-index.txt
+
+echo "done"
